@@ -48,7 +48,7 @@ Gas COS                   30 sccm                  20–30.7 sccm          top l
 Gas N₂ / Ar               60 / 300 sccm            ± 10%               wall chemistry; OES normalization (Ar)
 Time                      to endpoint (144 s)      arm 120 s;            time-out 175 s; fallback 150 s timed
                                                    time-out 175 s
-ER₀ (blanket ACL)         730 nm/min               ± 3% (± 22)           fleet matching; S = ACL:SiON 51 ± 1.5
+ER₀ (blanket ACL)         730 nm/min               ± 3% (± 22)           fleet matching; ACL:SiON 51 (≥ 48 to match)
 Bow / minimum web         0.67 / 12.2 nm           ≤ 1.0 / ≥ 11.0 nm     bow bites before the web (Chapter 10)
 Top loss                  50 nm                    ≤ 58 nm               mask height ≥ 1342 nm (3σ bound 1330 nm)
 ```
@@ -84,7 +84,7 @@ Source / bias             1.0 kW / 5 kHz, 70%, 600 V set-point    —       CD c
 Wafer temperature         10 °C (ESC −3 °C)        ± 3 K                 heating 0.66 kW → +13 K
 Time                      7 s                      6–8 s                 LER gain 0.55 nm (low); top loss (high)
 Total overetch            ST3a + ST3b = 18 s       ≤ 19.3 s              top loss +6.3 nm per s: +1.3 s reaches 58 nm
-LER (3σ) after ST3b       1.95 nm (from 2.5)       ≤ 2.5 nm              striation ≤ 2 nm at the mold etch (Book #29)
+LER (3σ) after ST3b       1.95 nm (from 2.5)       ≤ 2.0 nm              striation ≤ 2 nm at the mold etch (Book #29)
 ```
 
 ---

@@ -37,7 +37,7 @@ Specification and measurement:
   Exit CD (mean)              31.0 ± 1.0 nm            HV-SEM                     0.30 nm
   Family offset               ≤ 1.2 nm                 HV-SEM                     0.30 nm
   LCDU (3σ)                   ≤ 2.4 nm                 HV-SEM, CD-SEM             0.15–0.30 nm
-  LER (3σ)                    ≤ 2.5 nm (1.95 after ST3b)   CD-SEM                 0.15 nm
+  LER (3σ), after the open   ≤ 2.0 nm (1.95 after ST3b; 2.5 in the cap)   CD-SEM   0.15 nm
   Bow                         ≤ 1.0 nm                 CD-SAXS                    0.15 nm (reference 0.67)
   Minimum web                 ≥ 11.0 nm                derived: 45 − CD_bow       0.15 nm (reference 12.2)
   Mask height after open      ≥ 1330 nm (3σ bound)     ellipsometry + IR ridge    3 nm (reference 1350; bound 1340)

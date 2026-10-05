@@ -22,7 +22,7 @@ Step-by-step procedures for qualifying and monitoring the hard mask open module 
 **Acceptance:**
 ```
 ACL rate ER₀ 730 ± 22 nm/min (±3%); within-wafer uniformity ≤ 2.5% (3σ)
-SiON v_cap 0.237 nm/s (ACL:SiON 51 ± 1.5); SiN rate 8 ± 1 nm/min
+SiON v_cap 0.237 nm/s (ACL:SiON 51; matching limit ≥ 48, daily band ± 1.5); SiN rate 8 ± 1 nm/min
 Wafer temperature 10 ± 1 K across the wafer, in ST2 and ST3b
 CO/Ar plateau ratio after/before clearing 0.60 ± 0.05; EP time within ± 1.5 s of the fleet median
 Exit CD 31.0 ± 0.4 nm (site mean, fleet); family offset ≤ 1.2 nm; LCDU ≤ 2.4 nm (3σ)

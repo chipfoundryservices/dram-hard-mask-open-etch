@@ -179,7 +179,7 @@ Endpoint-based (M1) and timed etches (ME fixed at 144.4 s) for a film rate error
     top loss                             80 nm  (+30)                  66 nm  (±2)
 ```
 
-The endpoint puts the **clear** under control and gives up the top loss: a 3% error in the film's rate becomes −22 or +30 nm of mask, because the cap's life is fixed in seconds and the open is not. The timed etch does the opposite, protecting the top loss from the film's rate and making the clear depend on a longer overetch, which costs 16 nm of mean top loss and fails the 1348 nm specification at 66 nm. Neither is acceptable alone. The solution is the one that Chapter 15 describes:
+The endpoint puts the **clear** under control and gives up the top loss: a 3% error in the film's rate becomes −22 or +30 nm of mask, because the cap's life is fixed in seconds and the open is not. The timed etch does the opposite, protecting the top loss from the film's rate and making the clear depend on a longer overetch, which costs 16 nm of mean top loss and fails the 1342 nm requirement for the mean mask height (top loss at most 58 nm, Chapter 6) at 66 nm. Neither is acceptable alone. The solution is the one that Chapter 15 describes:
 
 ```
 Endpoint + feed-forward of the film's rate to the COS flow:
