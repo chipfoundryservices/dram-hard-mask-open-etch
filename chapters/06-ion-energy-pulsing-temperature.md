@@ -185,6 +185,8 @@ One-at-a-time response of M1 (centre: ER₀ 730 nm/min, main etch 144.4 s, top l
   Overetch −3 s                 730    144.4   33         1367         0.66    12.3      51.3
 ```
 
+The wafer temperature is held at 10 °C in every row (the ESC compensates the change in plasma heating); a change of ion flux or energy that was not compensated would also move the wafer by 0.24 K per 1% of ion power, and the bow by 0.01 nm.
+
 Reading the table:
 
 1. **The bow lives on one axis.** Only temperature moves it by more than 0.1 nm for a reasonable change (±5 K: +0.23 / −0.17 nm). COS moves it by 0.04–0.06 nm, everything else by less.
