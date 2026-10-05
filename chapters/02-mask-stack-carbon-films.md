@@ -182,13 +182,13 @@ Mask thickness budget, from the capacitor etch backwards (M1):
     (mold thickness, longer overetch, facet tails)
   After-open specification, 3σ lower bound               1330 nm
 
-  Mean after the open                                    1350 nm   (3σ: ± 18 nm)
+  Mean after the open                                    1350 nm   (3σ: ± 12 nm)
   Top loss in the open                                     50 nm
   ──────────────────────────────────────────────────────────────
   Carbon to deposit                                      1400 nm   (± 14 nm, 3σ)
 ```
 
-The 3σ of the after-open height is the root-sum-square of the film (±14 nm) and the top loss (±12 nm, from a cap uniform to 1.0% in thickness and 0.8% in erosion rate; Chapter 11): √(14² + 12²) = 18.4 nm. The lower bound is 1350 − 18 = 1332 nm, above the 1330 nm specification by 2 nm. The margin is thin.
+The 3σ of the after-open height has two parts. The carbon enters it twice: a thicker film is taller, but it also takes 0.125 s longer to open per nanometre, and the cap gives back 6.3 nm of loss per second of that time, so one nanometre of carbon is 1 − 6.3 × 0.125 = 0.21 nm of mask, and ±14 nm of carbon is ±3.0 nm of mask. The cap and its erosion rate (1.0% in thickness, 0.8% in rate; Chapter 11) give ±11.9 nm of top loss. The root-sum-square is √(3.0² + 11.9²) = 12.3 nm, and the lower bound is 1350 − 12 = 1338 nm, above the 1330 nm specification by 8 nm. The margin is thin.
 
 ### 2.4.2 A Thicker Mask Eats Itself
 
@@ -208,7 +208,7 @@ Each added 100 nm of carbon lengthens the open by 12.5 s, and the extra time all
 ```
 Incoming variation and what it does to the open (M1):
                                     3σ            Effect
-  ACL thickness                     ±14 nm        ±1.75 s of main etch; ±14 nm of mask height
+  ACL thickness                     ±14 nm        ±1.75 s of main etch; ±14 nm of carbon, ±11 nm of top loss: ±3 nm of mask
   Cap thickness                     ±0.4 nm       ±1.5 s of cap life; ±9.3 nm of top loss
   Cap erosion rate (chamber)        ±0.8%         ±1.2 s of cap life; ±7.4 nm of top loss
   Cap life, combined                              ±1.9 s → top loss ±11.9 nm
@@ -269,7 +269,7 @@ The most unusual line is the cap: **40.0 ± 0.4 nm**. It is the tightest film-th
 
 3. **The cap sets a ceiling on the mask.** At 40 nm of SiON the highest mask after the open is 1353 nm; more carbon gives less. Each nanometre of cap adds about 29 nm of ceiling.
 
-4. **The thickness is budgeted backwards.** 1116 nm floor + 214 nm margin = 1330 nm at 3σ; plus 50 nm of top loss and 20 nm of spread: 1400 nm of carbon.
+4. **The thickness is budgeted backwards.** 1116 nm floor + 214 nm margin = 1330 nm at 3σ; plus 50 nm of top loss and 12 nm of spread: 1400 nm of carbon.
 
 5. **Film variation enters as time.** ±14 nm of carbon is ±1.75 s; ±1 at% of hydrogen is ±4.3 s; the cap, at ±0.4 nm, is ±1.5 s of cap life and ±9 nm of top loss.
 
@@ -289,7 +289,7 @@ The most unusual line is the cap: **40.0 ± 0.4 nm**. It is the tightest film-th
 
 5. The array fraction of a new product is 45% and its open fraction is 40%. Compute the change in wafer bow from the open, using a carbon sag of 261 µm.
 
-6. Show that the 3σ lower bound of the after-open height is 1332 nm when the carbon and the top loss each vary independently, and find the cap uniformity (3σ, in nm) at which the lower bound falls to 1330 nm.
+6. Show that the 3σ lower bound of the after-open height is 1338 nm, taking into account that the carbon thickness enters it with a net slope of 1 − 6.3 nm/s × 0.125 s/nm = 0.21, and find the cap uniformity (3σ, in nm) at which the lower bound falls to 1330 nm.
 
 ---
 

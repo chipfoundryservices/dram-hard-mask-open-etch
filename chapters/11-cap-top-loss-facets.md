@@ -115,6 +115,7 @@ One nanometre of cap shifts the failure by 3.7 s and the mean loss by 21 nm (40 
   Cap erosion rate ± 1%             ± 1.5 s of t₀ → ± 9 nm
   Film rate ± 3% (hydrogen ± 1 at%) −22 / +30 nm        (the clock T moves; the cap's does not)
   Cap thickness ± 0.4 nm            ± 1.5 s → ± 9 nm
+  Carbon thickness ± 14 nm          ± 1.75 s of T → ± 11 nm of loss: 79% of the carbon error is returned as top loss (M1-c: 42%)
   Ion energy +20 eV                 −2.5 s of T, ρ + 0.015, v_cap + 4% → + 17 nm
   COS +1 sccm                       v_cap + 1% → − 1.5 s of t₀ → + 9 nm
 ```
@@ -144,10 +145,11 @@ The overetch cannot be shortened below the 11 s of the clear (Chapter 8). The CO
 M1-c (cap 42 nm), margin in the mean:
   L = 14 nm;  after open 1386 nm;  flat SiON left 3.5 nm (against 1.5)
   dL/dT = 3.4 nm/s;  cap life ± 1.9 s (3σ) → L ± 6.4 nm
-  After-open height at 3σ: 1386 − √(14² + 6.4²) = 1386 − 15.4 = 1371 nm      (specification 1330: margin 41 nm)
+  Carbon thickness ±14 nm enters the mask height with slope 1 − 3.4 × 0.125 = 0.58 → ±8.1 nm   (M1: 0.21 → ±3.0 nm)
+  After-open height at 3σ: 1386 − √(8.1² + 6.4²) = 1386 − 10.3 = 1376 nm     (specification 1330: margin 46 nm; M1: 8 nm)
 ```
 
-The spread of the loss falls from ±11.9 nm to ±6.4 nm, because the slope falls from 6.3 to 3.4 nm/s. Thickening the cap does two things: it moves the mean, and it flattens the curve that carries the variation.
+The spread of the loss falls from ±11.9 nm to ±6.4 nm, because the slope falls from 6.3 to 3.4 nm/s. Thickening the cap does two things: it moves the mean, and it flattens the curve that carries the variation. One thing it gives back: the open now returns only 42% of a carbon thickness error as top loss (79% in M1), so the carbon's own variation passes through to the mask height almost undiminished.
 
 ---
 

@@ -184,7 +184,7 @@ The endpoint puts the **clear** under control and gives up the top loss: a 3% er
 ```
 Endpoint + feed-forward of the film's rate to the COS flow:
   1 sccm of COS = 1% of the cap's erosion rate (0.071/30 = 0.0024 nm/s) = 1.5 s of the cap's clock
-  Film hydrogen ±1 at%  → ±3.0% in rate → ±4.3 s of open time → COS ∓2.9 sccm restores the clock
+  Film hydrogen +1 at% → rate +3.0% → open time −4.3 s → COS +2.9 sccm restores the clock (and the reverse for −1 at%)
   Residual (hydrogen known to ±0.3 at%):   ±0.9% in rate → ±1.3 s → ±8 nm of top loss
 ```
 

@@ -70,7 +70,7 @@ Fine sweep near the reference:
   After open (nm)    1399    1395    1388    1377    1365    1350    1334    1315
 ```
 
-Each 20 eV costs 2.5 s of open time and 15 nm of mask, near 600 eV. The after-open height must be at least 1348 nm for the 3σ lower bound to reach 1330 nm (Chapter 2); the reference energy of 600 eV is the highest, and therefore **fastest**, that does. It is also at the edge of the specification, with 2 nm of margin. A fab that wanted margin would take a lower energy:
+Each 20 eV costs 2.5 s of open time and 15 nm of mask, near 600 eV. The after-open height must be at least 1342 nm for the 3σ lower bound (12.3 nm, Chapter 2) to reach 1330 nm, which is a top loss of at most 58 nm; the specification is reached at 610 eV, so the reference energy of 600 eV is within 10 eV of the highest, and therefore **fastest**, that meets it. It is at the edge, with 8 nm of margin in the mean. A fab that wanted margin would take a lower energy:
 
 ```
 M1 at 540 eV (a margin-seeking variant, "M1-m"):
@@ -206,7 +206,7 @@ Top loss (nm) / bow (nm) over energy and COS flow (other parameters as M1):
   COS 40      69 / 0.61  116 / 0.60 170 / 0.59 228 / 0.58 285 / 0.57
 ```
 
-The specification needs a top loss of at most 50 nm (after-open height at least 1348 nm for a 3σ bound of 1330 nm). Every cell in the upper left meets it and has a bow between 0.65 and 0.85 nm, inside the 1.0 nm limit. The window is not narrow in bow but one-sided in mask height, and its boundary runs along the diagonal from (500 eV, 35 sccm) to (700 eV, 20 sccm). The reference lies on the boundary.
+The specification needs a top loss of at most 58 nm (after-open height at least 1342 nm for a 3σ bound of 1330 nm). Every cell in the upper left meets it and has a bow between 0.65 and 0.85 nm, inside the 1.0 nm limit. The window is not narrow in bow but one-sided in mask height, and its boundary runs along the diagonal from (550 eV, 35 sccm) to (700 eV, 20 sccm). The reference lies just inside it.
 
 ---
 
@@ -236,7 +236,7 @@ The two big steps are the temperature (−0.89 nm, 44% of M0's bow) and the COS 
 
 2. **The top loss lives on everything.** 100 eV is 97 nm (49 → 147); 5 sccm of COS is 54 nm; 3 s of overetch is 21 nm. Mask height is the output with no margin.
 
-3. **M1 runs at the fast edge of the mask specification.** 600 eV is the highest energy that meets it; 540 eV buys 38 nm of margin for 8 s and $0.29 a wafer; a thicker cap buys it cheaper (Chapter 11).
+3. **M1 runs at the fast edge of the mask specification.** 600 eV is within 10 eV of the highest energy that meets it; 540 eV buys 38 nm of margin for 8 s and $0.29 a wafer; a thicker cap buys it cheaper (Chapter 11).
 
 4. **The pulse is the smallest bow lever.** At constant ion flux it moves x₀ by 4.5% per 0.1 of duty and the bow by 0.03 nm; its value is in charging relief and in the cyclic scheme, not in the profile.
 
